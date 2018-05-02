@@ -1,0 +1,153 @@
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.background {
+  position: relative;
+  width: 100%;
+}
+/*creating the material design page header style:*/
+.background::after {
+  content: '';
+  background: linear-gradient(0deg, #00000059, #0000003d), url(../../../assets/img/cafe.jpg) no-repeat center top fixed;
+  height: 550px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.Container {
+  padding-top: 135px;
+}
+
+@media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
+  .container {
+    max-width: auto;
+  }
+}
+.Row {
+  padding-bottom: 2em;
+}
+.Section {
+  margin-bottom: 5em;
+}
+
+.topHeading {
+  padding-bottom: 8em;
+  text-align: center;
+  z-index: 1;
+}
+.heading {
+  font-size: 3em;
+  font-weight: 600;
+  color: black;
+}
+.subheading {
+  font-size: 1.9em;
+  color: white;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Icon {
+  padding-right: 10px;
+}
+
+.customCard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.08), 0px 10px 70px 0px rgba(0, 0, 0, 0.09), 0px 8px 1px 7px rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+  .customCard {
+    margin-bottom: 1em;
+    padding: 17px 25px;
+  }
+}
+.customCardHeader {
+  color: #444;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.customCardHeader .fas {
+  padding: 0 10px 0 0;
+}
+.customCardBody {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*Inline form for subscriptions:*/
+.Form {
+
+}
+
+.FormControl {
+  display: inline-block;
+  width: auto;
+  padding: 1.1em 1.6em;
+  box-shadow: none;
+  border: none;
+  border-radius: 10em;
+  vertical-align: middle;
+  border-color: #127ba3;
+}
+
+.Button {
+  display: inline-block;
+  width: auto;
+  padding: 1.1em 1.6em;
+  box-shadow: none;
+  border: none;
+  border-radius: 10em;
+  vertical-align: middle;
+  border-color: #127ba3;
+}
+
+.CustomCardButton {
+  max-width: max-content;
+  padding: 0.5em 1.5em;
+  font-size: 1.1em;
+  text-transform: none;
+  color: white !important;
+  border-color: #5c88af;
+  background-color: #70aadc;
+}
+
+.CustomCardButton:hover {
+  background-color: #5c88af;
+  border-color: #5c88af;
+}
+
+.CustomCardButton:active {
+  background-color: #5c88af;
+  border-color: #5c88af;
+}
+
+.CustomCardButton:focus {
+  background-color: #5c88af;
+  border-color: #5c88af;
+}

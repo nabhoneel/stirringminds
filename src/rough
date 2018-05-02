@@ -1,0 +1,6 @@
+<div className={classes.Navbar}>
+  <a className={classes.Brand}><Logo /></a>
+  <ul>
+    {menuItems}
+  </ul>
+</div>

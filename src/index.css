@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/lineto-circular-pro-book.ttf'); /* IE9 Compat Modes */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Circular', sans-serif;
+}
+
+.form-control {
+  display: inline-block;
+  width: auto;
+  padding: 0.8em 1.4em;
+  box-shadow: none;
+  border: none;
+  border-radius: 10em;
+  vertical-align: middle;
+}

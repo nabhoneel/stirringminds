@@ -1,0 +1,59 @@
+.Section {
+  background: linear-gradient(-23deg, #00d2ff 0%, #5d69ea 100%);
+  color: white;
+  padding: 5em 0;
+}
+
+.Heading {
+  text-align: center;
+  padding-bottom: 7em;
+}
+
+.Heading h1 {
+  font-size: 3em;
+}
+
+/*.SectionBackground {
+position: absolute;
+right: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(#ff9d2f, #ff6126);
+transform: skewY(-6deg);
+transform-origin: top left;
+}*/
+
+.Card {
+  text-align: center;
+}
+
+.CardName {
+  text-transform: capitalize;
+  font-size: 1.9em;
+}
+
+.Logo i {
+  font-size: 4em;
+}
+
+.CardName:after {
+  content: '';
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  width: 70px;
+  border: 2px solid #ececec;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.CardBody {
+  color: inherit;
+  padding: 1em;
+  margin-top: 20px;
+}

@@ -1,0 +1,531 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v10/tDbD2oWUg0MKqScQ6A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.background {
+  position: relative;
+  width: 100%;
+}
+/*creating the material design page header style:*/
+.background::after {
+  content: '';
+  background: linear-gradient(0deg, rgba(25, 25, 25, 0.09), rgba(0, 0, 0, 0.21)), url(assets/img/header.jpg) no-repeat center top fixed;
+  height: 450px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+.first-container {
+  padding-top: 150px;
+}
+@media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
+  .container {
+    max-width: auto;
+  }
+}
+.row {
+  padding-bottom: 2em;
+}
+.section {
+  margin-bottom: 5em;
+}
+/*add an arrow below each section:*/
+.add-arrow {
+  margin-bottom: 0;
+}
+.add-arrow:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  width: 0;
+  height: 0;
+  border-top: solid 25px #fff;
+  border-left: solid 25px transparent;
+  border-right: solid 25px transparent;
+}
+@media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
+  .add-arrow:after {
+    display: none !important;
+  }
+}
+.add-blue-arrow {
+  margin-bottom: 0;
+}
+.add-blue-arrow:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  width: 0;
+  height: 0;
+  border-top: solid 25px #e4f1fe;
+  border-left: solid 25px transparent;
+  border-right: solid 25px transparent;
+}
+@media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
+  .add-blue-arrow:after {
+    display: none !important;
+  }
+}
+.add-gray-arrow {
+  margin-bottom: 0;
+}
+.add-gray-arrow:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  width: 0;
+  height: 0;
+  border-top: solid 25px #f3f3f3;
+  border-left: solid 25px transparent;
+  border-right: solid 25px transparent;
+}
+@media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
+  .add-gray-arrow:after {
+    display: none !important;
+  }
+}
+.top-heading {
+  padding-bottom: 8em;
+  text-align: center;
+  font-family: 'Poppins';
+  z-index: 1;
+}
+.heading {
+  font-size: 3em;
+  font-weight: 600;
+  color: black;
+}
+.subheading {
+  font-size: 1.9em;
+  color: black;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+.custom-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.08), 0px 10px 70px 0px rgba(0, 0, 0, 0.09), 0px 8px 1px 7px rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 720px) {
+  .custom-card {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 17px 25px;
+  }
+}
+.custom-card-header {
+  color: #444;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.custom-card-header .fas {
+  padding: 0 10px 0 0;
+}
+.custom-card-body {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+.btn-danger {
+  border-color: #ca362d;
+}
+blockquote {
+  display: grid;
+  padding: 0 1px;
+}
+blockquote h2 {
+  text-align: center;
+  font-family: Poppins;
+  margin: 0 -5px;
+}
+.quotation {
+  font-size: 18px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  line-height: 1.4;
+  text-align: center;
+  font-family: 'Arvo';
+  padding: 5px 14px;
+}
+.quotation:before {
+  content: open-quote;
+  font-family: fantasy;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  top: 52px;
+  font-weight: 500;
+  font-size: 7em;
+}
+.quote-author {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+.image-holder {
+  padding: 0 1em;
+  transition: padding 0.3s;
+}
+.image-holder img {
+  max-width: -webkit-fill-available;
+  border-radius: 5px;
+}
+.image-holder:hover {
+  padding: 0 0.8em;
+  cursor: pointer;
+}
+.company-facts h2 {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.company-facts h2:before {
+  border-top: 2px solid #000;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 58%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+.company-facts h2 span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.facts-list ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.facts-list ul li {
+  padding: 5px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
+.facts-list ul li h3 {
+  font-family: 'Poppins';
+  font-size: 3em;
+  font-weight: 700;
+}
+.path-to-success {
+  display: none;
+}
+.path-to-success ul {
+  list-style: bullet;
+}
+.path-to-success li {
+  text-transform: none !important;
+}
+@media only screen and (max-width: 720px) {
+  .path-to-success {
+    display: block !important;
+  }
+  blockquote,
+  .image-holder {
+    display: none !important;
+  }
+  .section {
+    margin-bottom: 0;
+  }
+  .top-heading {
+    margin-bottom: 4em;
+  }
+  .learning-period-image {
+    max-height: 14em !important;
+  }
+  .plan-payment-future .col-md-6 {
+    margin: 2em 0;
+  }
+}
+.start-learning .container {
+  text-align: center;
+}
+.start-learning .container .heading {
+  font-size: 2.2em;
+  text-align: center;
+  padding-top: 2.5em;
+  padding-bottom: 20px;
+}
+.start-learning .container .custom-card-button {
+  margin-bottom: 1.5em;
+}
+.course-card {
+  text-align: left;
+  padding: 14px 50px 16px 16px;
+  background: white;
+  margin: 17px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+.course-card h2 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+.course-card h4 {
+  font-size: 14px;
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: gray;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.course-card:hover {
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.course-card:hover .fa-angle-right {
+  right: 30px;
+}
+.course-card .fa-angle-right {
+  color: red;
+  font-size: 3em;
+  position: absolute;
+  top: 51%;
+  right: 34.5px;
+  margin-top: -25.5px;
+  transition: right 0.3s;
+}
+.choose-your-path .container .row {
+  padding-bottom: 3em;
+}
+.choose-your-path .container .row .col-md-12 .heading {
+  text-align: center;
+  padding: 1.2em 0;
+}
+.choose-your-path .container .row .col-md-12 .row .col-md-4 div {
+  display: grid;
+}
+.choose-your-path .container .row .col-md-12 .row .col-md-4 img.learning-period-image {
+  max-width: -webkit-fill-available;
+  border-radius: 5px;
+  max-height: 20em;
+  margin: auto;
+}
+.choose-your-path .container .row .col-md-12 .row .col-md-4 h2,
+.choose-your-path .container .row .col-md-12 .row .col-md-4 p,
+.choose-your-path .container .row .col-md-12 .row .col-md-4 .btn-danger {
+  margin: auto;
+}
+.choose-your-path .container .row .col-md-12 .row .col-md-4 h2 {
+  padding: 20px 0 10px 0;
+  font-family: 'Poppins';
+}
+.choose-your-path .container .row .col-md-12 .row .col-md-4 p {
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-family: 'Poppins';
+}
+.choose-your-path .container .row .plan-payment-future .col-md-12 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2.1em;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin: 1em 0 2em 0;
+}
+.choose-your-path .container .row .plan-payment-future .col-md-6 img {
+  float: left;
+  max-width: 140px;
+  border-radius: 5em;
+  margin-right: 3em;
+}
+.choose-your-path .container .row .plan-payment-future .col-md-6 h2 {
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-bottom: 17px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.choose-your-path .container .row .plan-payment-future .col-md-6 a {
+  color: black !important;
+  font-family: 'Poppins';
+  font-weight: 400;
+  border-color: #d2d2d2 !important;
+}
+.online-events {
+  background-color: #f3f3f3;
+}
+.online-events .events-header {
+  text-align: center;
+  padding: 5em 0 2em 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.online-events .events-header .dropdown-item {
+  font-family: 'Poppins';
+  font-size: 1em;
+  text-transform: none;
+  text-align: center;
+}
+.online-events .events-header .dropdown-item:hover {
+  background-color: #ffdb00;
+  color: black;
+}
+.online-events .events-header .btn {
+  border: none;
+  background-color: #fba3a300;
+  color: black;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.online-events .events-header .btn:hover {
+  margin: inherit;
+  color: gray;
+}
+.online-events .events-header .btn:focus {
+  box-shadow: none;
+}
+.online-events .event-cards .far {
+  margin-right: 1em;
+}
+.online-events .event-cards .event-card {
+  padding: 20px 50px 40px 16px;
+}
+.online-events .event-cards .event-card h2 {
+  font-size: 1.4em;
+}
+.online-events .event-cards .event-card img {
+  max-width: 10em;
+  float: left;
+  margin-right: 2em;
+}
+.corporate-digital-training .container .row {
+  padding: 5em 0;
+}
+.corporate-digital-training .container .row img {
+  max-width: -webkit-fill-available;
+  border-radius: 4px;
+}
+.corporate-digital-training .container .row h2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  font-size: 28px;
+  padding-bottom: 0.8em;
+}
+@media only screen and (max-width: 720px) {
+  .corporate-digital-training .container .row h2 {
+    margin-top: 1em;
+  }
+}
+.corporate-digital-training .container .row p {
+  font-size: 17px;
+  font-family: 'Arvo';
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 2.8em;
+}
+.corporate-digital-training .container .row a {
+  padding: 0.8em 2em;
+  font-size: 17px;
+}
+.corporate-digital-training .container .row .col-md-12 {
+  padding-top: 2em;
+}
+.corporate-digital-training .container .row .col-md-12 h2 {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.corporate-digital-training .container .row .col-md-12 h2:before {
+  border-top: 2px solid #000;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+.corporate-digital-training .container .row .col-md-12 h2 span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.corporate-digital-training .container .row .partners {
+  max-width: -webkit-fill-available;
+}
+.corporate-digital-training .container .row .partners img {
+  filter: grayscale(100%) contrast(58%) brightness(125%);
+}
+@media only screen and (max-width: 720px) {
+  .corporate-digital-training .container .row .partners {
+    display: grid;
+  }
+  .corporate-digital-training .container .row .partners img {
+    width: 10em;
+    margin: 1em auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+.NavItem {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.4em;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.NavItem:hover {
+  background-color: #c9c9c947 !important;
+  color: white;
+  text-decoration: none !important;
+}
+
+.Brand {
+  padding: 20px 36px;
+  position: absolute;
+}
