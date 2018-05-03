@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import { bubble as Menu } from 'react-burger-menu';
 
 import classes from './Navbar.css';
 import Aux from '../../hoc/Aux';
 import Logo from '../../components/Logo/Logo';
+import menuIcon from '../../assets/img/menu.png';
 
 class Navbar extends Component {
   render() {
@@ -26,8 +27,11 @@ class Navbar extends Component {
         top: '36px'
       },
       bmBurgerBars: {
-        background: '#ffd168',
-        borderRadius: '4px'
+        background: 'white',
+        borderRadius: '5px',
+        height: '25%',
+        boxShadow: '#673AB7 0px 0px 5px -0.5px',
+        background: '#ffffff'
       },
       bmCrossButton: {
         height: '24px',

@@ -17,7 +17,7 @@ const header = () => {
 
             <div className="col-md-6">
               <div className={classes.customCard}>
-                <h2 className={classes.customCardHeader}><i className={classes.Icon + " fas fa-people-carry"}></i>Co-work</h2>
+                <h2 className={classes.customCardHeader}>Co-work</h2>
                 <div className={classes.customCardBody}>
                   Our hubs are designed for creatives, freelancers, independents and startups to be an inspiring environment to work and collaborate.
                 </div>
@@ -27,7 +27,7 @@ const header = () => {
 
             <div className="col-md-6">
               <div className={classes.customCard}>
-                <h2 className={classes.customCardHeader}><i className={classes.Icon + " fas fa-folder-open"}></i>Startup Courses</h2>
+                <h2 className={classes.customCardHeader}>Startup Courses</h2>
                 <div className={classes.customCardBody}>
                   Having successfully funder education intitiatives, we are now working along with govt, universities and private players to foster startup education for young minds.
                 </div>

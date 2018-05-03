@@ -4,9 +4,12 @@ import classes from './About.css';
 
 const about = (props) => {
   let cards = props.whatWeDo.map((item, index) => {
+    let localStyle = {
+      borderTop: '3px solid ' + item.topColor
+    }
     return (
-      <div key={index} className="col-sm-4">
-        <div key={index} className={classes.Card}>
+      <div key={index} className="col-md-4">
+        <div key={index} className={classes.Card} style={localStyle}>
           <span className={classes.Logo}><i className={item.icon}></i></span>
           <h2 className={classes.CardName}>
             {item.name}

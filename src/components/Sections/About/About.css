@@ -1,16 +1,25 @@
 .Section {
-  background: linear-gradient(-23deg, #00d2ff 0%, #5d69ea 100%);
-  color: white;
-  padding: 5em 0;
+  /*background: linear-gradient(-23deg, #00d2ff 0%, #5d69ea 100%);*/
+  color: black;
+  padding: 0 0 5em 0;
 }
 
 .Heading {
+  padding-bottom: 4em;
   text-align: center;
-  padding-bottom: 7em;
 }
 
 .Heading h1 {
+  font-family: 'Circular Bold';
+  font-weight: 800;
   font-size: 3em;
+}
+
+.Heading h4 {
+  font-family: 'Circular';
+  font-weight: 400;
+  font-size: 23px;
+  color: #808080;
 }
 
 /*.SectionBackground {
@@ -26,15 +35,23 @@ transform-origin: top left;
 
 .Card {
   text-align: center;
+  box-shadow: 2px 2px 20px -3px #bfbfbf;
+  border-radius: 5px;
+  padding: 1em 0.8em 0.5em 0.8em;
+  margin: 1em 0;
+  height: 93%;
+  background-color: white;
 }
 
 .CardName {
   text-transform: capitalize;
   font-size: 1.9em;
+  padding-top: 10px;
+  font-family: 'Circular Bold';
 }
 
 .Logo i {
-  font-size: 4em;
+  font-size: 45px;
 }
 
 .CardName:after {
