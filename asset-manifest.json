@@ -1,11 +1,13 @@
 {
-  "main.css": "static/css/main.4723bf23.css",
-  "main.css.map": "static/css/main.4723bf23.css.map",
-  "main.js": "static/js/main.40f9b30b.js",
-  "main.js.map": "static/js/main.40f9b30b.js.map",
+  "main.css": "static/css/main.b5018f24.css",
+  "main.css.map": "static/css/main.b5018f24.css.map",
+  "main.js": "static/js/main.fe284a2d.js",
+  "main.js.map": "static/js/main.fe284a2d.js.map",
+  "static/media/StirringMinds-Coworking-Gurgaon.jpg": "static/media/StirringMinds-Coworking-Gurgaon.813c7b37.jpg",
   "static/media/StirringMinds-logo.png": "static/media/StirringMinds-logo.58899e5e.png",
   "static/media/cafe.jpg": "static/media/cafe.696acbca.jpg",
   "static/media/lineto-circular-pro-bold.ttf": "static/media/lineto-circular-pro-bold.a3d08e81.ttf",
   "static/media/lineto-circular-pro-book.ttf": "static/media/lineto-circular-pro-book.9d1891cc.ttf",
-  "static/media/menu.png": "static/media/menu.87b8fe8a.png"
+  "static/media/menu.png": "static/media/menu.87b8fe8a.png",
+  "static/media/pranav_bhatia.png": "static/media/pranav_bhatia.52c21832.png"
 }
