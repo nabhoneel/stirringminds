@@ -1,37 +1,39 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+/*
 .background {
-  position: relative;
-  width: 100%;
+position: relative;
+width: 100%;
+background: #eaf7fb59;
 }
-/*creating the material design page header style:*/
+creating the material design page header style:s
 .background::after {
-  content: '';
-  background: linear-gradient(0deg, #00000059, #0000003d), url(../../../assets/img/cafe.jpg) no-repeat center top fixed;
-  height: 550px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 0;
+content: '';
+background: linear-gradient(0deg, #00000059, #0000003d), url(../../../assets/img/cafe.jpg) no-repeat center top fixed;
+height: 550px;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 0;
 }
 
 @media (min-width: 900px) {
-  .background {
-    padding: 0 0 5px;
-  }
+.background {
+padding: 0 0 5px;
 }
+}
+*/
 
 .Container {
-  padding-top: 135px;
+  padding-top: 55px;
 }
 
 @media only screen and (max-width: 720px), only screen and (min-width: 720px) and (max-width: 959px) {
@@ -39,15 +41,49 @@ html {
     max-width: auto;
   }
 }
+
+.Section {
+  background: #eaf7fb00;
+  padding-bottom: 5em;
+}
+
+/*Background gradient and polygon*/
+.Section:before {
+  content: "";
+  width: 100%;
+  height: 670px;
+  z-index: -1000;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: skew(0deg,-10deg);
+  transform: skew(0deg,-10deg);
+}
+
+@media (max-width: 576px) {
+  .Section:before: {
+    display: none;
+  }
+
+  .Section {
+    background: linear-gradient(160deg,#16847a,#aa7ecd);
+  }
+
+  .Container {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+}
+
 .Row {
   padding-bottom: 2em;
 }
-.Section {
-  margin-bottom: 5em;
-}
 
 .topHeading {
-  padding-bottom: 8em;
+  padding-bottom: 5em;
   text-align: center;
   z-index: 1;
 }
@@ -71,30 +107,52 @@ html {
 .customCard {
   background-color: #fff;
   border-radius: 5px;
-  padding: 15px 25px;
+  height: 32em;
   position: relative;
   width: 100%;
   z-index: 10;
-  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.08), 0px 10px 70px 0px rgba(0, 0, 0, 0.09), 0px 8px 1px 7px rgba(0, 0, 0, 0.01);
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.16), 0px 10px 70px 0px rgba(0, 0, 0, 0.16), 0px 8px 1px 7px rgba(0, 0, 0, 0.01);
+  transition: box-shadow 0.3s;
   display: flex;
   flex-direction: column;
 }
+
+.customCard:hover {
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.08), 0px 10px 70px 0px rgba(0, 0, 0, 0.09), 0px 8px 1px 7px rgba(0, 0, 0, 0.01);
+}
+
 @media only screen and (max-width: 768px) {
   .customCard {
     margin-bottom: 1em;
-    padding: 17px 25px;
   }
 }
+
+.customCardImage {
+  overflow: hidden;
+  height: 14em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.customCardImage img {
+  width: 100%;
+}
+
 .customCardHeader {
   color: #000;
+  margin-bottom: 0 !important;
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .customCardHeader .fas {
   padding: 0 10px 0 0;
 }
+
 .customCardBody {
-  padding: 1em 0;
+  padding: 1em 1.5em;
+  display: grid;
+  grid-row-gap: 1em;
   font-size: 1.2em;
   color: #677380;
   -webkit-font-smoothing: antialiased;
